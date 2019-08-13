@@ -1,0 +1,17 @@
+﻿
+@{
+    @ViewBag.ThongBao;
+    Layout = null;
+}
+<h2>DangNhap</h2>
+@using (Html.BeginForm())
+{
+    <span>Tài khoản :</span> <br />
+    @Html.TextBox("txtusername")
+    <br />
+    <span>Mật khẩu:</span><br />
+    @Html.Password("txtpassword")
+    <br />
+    <input type="submit" name="btnSubmit" value="Đăng Nhập" />
+}
+
